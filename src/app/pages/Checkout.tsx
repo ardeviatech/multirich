@@ -35,7 +35,7 @@ const shippingSchema = yup.object({
   province: yup.string().required("Province is required"),
   postalCode: yup.string().required("Postal code is required"),
   country: yup.string().required("Country is required"),
-  notes: yup.string(),
+  notes: yup.string().optional().nullable().required(),
 });
 
 type ShippingFormData = yup.InferType<typeof shippingSchema>;
@@ -50,7 +50,7 @@ const billingSchema = yup.object({
   province: yup.string().required("Province is required"),
   postalCode: yup.string().required("Postal code is required"),
   country: yup.string().required("Country is required"),
-  notes: yup.string(),
+  notes: yup.string().optional().nullable().required(),
 });
 
 type BillingFormData = yup.InferType<typeof billingSchema>;
