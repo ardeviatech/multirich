@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react";
 // import logoImg from "figma:asset/a16171fb97b02acdbc7f0132e079a35530ee5c1e.png";
-const logoImg = "";
+const logoImg = "https://firebasestorage.googleapis.com/v0/b/eap-environmental.firebasestorage.app/o/MultiRich%2FLogo%2F2024-MULTIRICH-LOGO-removebg-preview.png?alt=media&token=37f92fec-37b6-4cac-9ac5-18574867c100";
 
 const productLinks = [
   { label: "Marble Slabs", to: "/products" },
